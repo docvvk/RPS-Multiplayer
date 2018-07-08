@@ -1,34 +1,35 @@
 .jumbotron {
     height: 100px;
-    opacity: 0.50;
     padding-top: 0%;
     margin-bottom: 25px;
-    background-color: #0f0f0f;
+	background-color: #5a7e8e77;
     font-weight: bolder;
     color: white;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Russo One', Helvetica, sans-serif;
     background-size: cover;
     padding: 5em inherit;
     text-align: center;
-    vertical-align: middle;
+	vertical-align: middle;
  }
 
 body {
-	background-color: #222325;
+	background-image: url('images/bg3.jpg');
 	background-repeat: repeat;
+	height: 100vh;
 }
 
 .container { 
-	width: 80% 
+	width: 80%;
 }
 
 h1 {
-	font-size: 2em;
-	color: white;
+	font-size: 5vw;
+	color: rgb(206, 29, 29);
 }
 
 .gamePanel h3 {
 	font-size: 3.5em;
+	opacity: 0.8;
 	color: white;
 	margin: 1.25em 0em 0em 0em;
 }
@@ -56,12 +57,12 @@ h1 {
 }
 
 .playerPanelTurn {
-	border: 5px solid #efad0d;
+	border: 5px solid #000000;
 }
 
 .playerPanel .panelName {
 	height: 65px;
-	background-color: #52565e;
+	background-color: #5a7e8ec6;
 	text-align: center;
 	font-weight: bold;
 	border-radius: 10px 10px 0px 0px;
@@ -75,11 +76,12 @@ h1 {
 
 .playerPanel .panelOption {
 	height: 50px;
-	background-color: #f9f9f9;
+	background-color: #b4f0ff9d;
 	text-align: center;
-	font-weight: normal;
-	font-size: 1.5em;
+	font-weight: bold;
+	font-size: 1.4em;
 	color: black;
+	text-transform: uppercase;
 }
 
 .playerPanel .panelOption .option {
@@ -87,36 +89,43 @@ h1 {
 }
 
 .playerPanel .panelOption:hover {
-	background-color: #e0e0e0;
+	background-color: #5deee750;
 }
 
 .playerPanel .panelOption:active {
-  background-color: #e0e0e0;
+  background-color: #5cdeec;
 }
 
 .playerPanel .panelStats {
 	height: 60px;
-	background-color: #bfbfbf;
+	background-color: #5a7e8ec6;
 	text-align: center;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 1.4em;
+	text-transform: uppercase;
 	color: black;
 	border-radius: 0px 0px 10px 10px;
+}
+#playerOneName {
+	color: #d6f0f3;
 }
 
 .gamePanel {
 	height: 281px;
-	background-color: transparent;
+	background-color: #5a7e8ec6;
 	border: 1px solid black;
 	border-radius: 10px;
 }
 
 
 #waitingNotice {
-	font-size: 1.5em;
-	color: #efad0d;
-	font-style: italic;
-	font-weight: normal;
+	font-size: 1.7em;
+	font-family: cursive;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+#roundOutcome {
+	color: rgb(255, 255, 255);
 }
 
 
@@ -126,7 +135,7 @@ h1 {
 	overflow: auto;
 	text-align: left;
   	border-radius: 0px;
-  	background-color: #c9c9c9;
+  	background-color: #5a7e8ec6;
 	font-size: 1em;
 	color: black;
 	padding: 1em 1em 1em 1em;
@@ -135,33 +144,39 @@ h1 {
 .chatInput {
 	height: 150px;
   	border-radius: 0px;
-  	background-color: #e3e3e3;
+  	background-color: #b4f0ff9d;
 }
 
 .chatLabel {
 	font-size: 1.5em;
-	color: #434343;
+	color: #080808;
 	text-align: center;
 	font-weight: bold;
 	padding: 0.5em 0em 0.5em 0em;
 }
 
 .chatColor1 {
-	color: #b03138;
+	color: #27096e;
+	font-size: 1.2em;
 }
 
 .chatColor2 {
-	color: #084596;
+	color: #01413b;
+	font-size: 1.2em;
 }
 
 .chatColorDisconnected {
 	color: black;
-	font-style: italic;
+	font-family: cursive;
+	font-size: 1.3em;
+	font-weight: bold;
 }
 
 .chatColorJoined {
 	color: black;
-	font-style: italic;
+	font-family: cursive;
+	font-size: 1.3em;
+	font-weight: bold;
 }
 
 #title {
@@ -174,13 +189,15 @@ h1 {
 #name-input {
 	width: 200px;
 	height: 30px;
-	border-radius: 0px;
+	border-radius: 40%;
 	text-align: center;	
+	color: #B5DAEA;
+	background-color:#3D4955; 
 }
 
 #name-input:focus {
 	color: #434343;
-	background-color: white;
+	background-color: rgba(87, 227, 252, 0.721);
 }
 
 #chat-input {
@@ -191,12 +208,12 @@ h1 {
 	color: #3c3c3c;
 	text-align: center;
 	border-radius: 0px;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.301);
 }
 
 #chat-input:focus {
 	color: #3c3c3c;
-	background-color: white;
+	background-color: rgba(87, 227, 252, 0.721);
 }
 
 #chat-send {
@@ -205,7 +222,8 @@ h1 {
 	margin-left: 5px;
 	margin-right: 5px;
 	border-radius: 10px;
-	color: #3c3c3c;
+	color: #B5DAEA;
+	background-color:#3D4955; 
 	font-weight: normal;
 	position: relative;
 	top: -40px;
@@ -217,15 +235,44 @@ h1 {
 	margin-left: 30px;
 	padding: 5px 45px;
 	border-radius: 0px;
-	color: #434343;
+	color: #B5DAEA;
+	background-color:#3D4955; 
 	font-weight: normal;
+	border-radius: 40%;
 }
 
 .p1Selected{
-	background-color: springgreen;
+	background-color: rgb(0, 238, 255);
 }
 
 .playerSelectedOpt{
-	border: 5px solid springgreen;
-	background-color: springgreen;
+	border: 5px solid rgb(0, 238, 255);
+	background-color: rgb(0, 238, 255);
+}
+@media (max-width: 992px) {
+	h1 {
+		font-size: 4vw;	
+	}
+}
+@media (max-width: 768px) {
+	h1 {
+		font-size: 5vw;	
+	}
+}
+@media (max-width: 576px) {
+	h1 {
+		font-size: 6vw;	
+	}
+	.jumbotron {
+		height: 15vw;;
+	}
+	#name-input {
+		position: relative;
+		bottom: 18px;
+	}
+	#add-name {
+		position: relative;
+		right: 15px;
+		bottom: 25px;
+	}
 }
